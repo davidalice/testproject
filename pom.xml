@@ -99,6 +99,29 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+      	<groupId>com.github.searls</groupId>
+      	<artifactId>jasmine-maven-plugin</artifactId>
+      	<version>2.2</version>
+      	        <executions>
+          <execution>
+            <goals>
+              <goal>test</goal>
+            </goals>
+	    
+          </execution>
+        </executions>
+	<configuration>
+            <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>  
+                  <webDriverCapabilities>
+                       <capability>
+                            <name>phantomjs.binary.path</name>
+                            <value>${phantomjs.binary}</value> 
+                         <!--   <value>/apps/Senchabin/Sencha/Cmd/6.1.1.76/bin/windows/phantomjs/phantomjs.exe</value> -->
+                        </capability>
+                  </webDriverCapabilities>
+          </configuration>
+      </plugin>
     </plugins>
   </build>
 
