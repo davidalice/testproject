@@ -22,6 +22,12 @@
     <webjars-bootstrap.version>4.0.0</webjars-bootstrap.version>
     <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
     <webjars-jquery.version>3.3.1</webjars-jquery.version>
+    <jetty.version>9.2.2.v20140723</jetty.version>
+    <failsafe.version>2.17</failsafe.version>
+    <junit.version>4.12-beta-1</junit.version>
+    <ghostdriver.version>1.1.0</ghostdriver.version>
+    <phantomjs.version>1.9.7</phantomjs.version>
+    <phantomjs.plugin.version>0.4</phantomjs.plugin.version>
   </properties>
 
   <dependencies>
