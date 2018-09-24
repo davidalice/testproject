@@ -17,7 +17,7 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            sh 'mvn clean test'
+            sh 'mvn jasmine:bdd'
           }
         }
         stage('Code Quality') {
