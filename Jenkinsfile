@@ -19,8 +19,6 @@ pipeline {
           steps {
             sh 'ifconfig'
             sh 'pwd'
-            sh 'phantomjs --version'
-            sh 'whereis phantomjs'
             sh 'mvn jasmine:test'
           }
         }
