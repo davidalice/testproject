@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'pwd'
-        sh 'mvn -B -DskipTests clean package'
+        sh 'mvn clean package'
       }
     }
     stage('Test') {
