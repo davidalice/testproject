@@ -19,7 +19,6 @@ pipeline {
           steps {
             sh 'ifconfig'
             sh 'pwd'
-            sh 'phantomjs --version'
             sh 'sudo apt-get update -y'
             sh '''
 sudo apt-get upgrade -y'''
