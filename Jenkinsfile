@@ -19,7 +19,7 @@ pipeline {
           steps {
             sh 'ifconfig'
             sh 'pwd'
-            sh 'mvn jasmine:bdd'
+            sh 'mvn verify'
           }
         }
         stage('Code Quality') {
