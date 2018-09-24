@@ -148,15 +148,20 @@
         </specIncludes>
         <customRunnerTemplate>/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
         <haltOnFailure>true</haltOnFailure>
-      
-            <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>  
-                  <webDriverCapabilities>
-                       <capability>
-                            <name>phantomjs.binary.path</name>
-                            <value>${phantomjs.binary}</value> 
-                         <!--   <value>/apps/Senchabin/Sencha/Cmd/6.1.1.76/bin/windows/phantomjs/phantomjs.exe</value> -->
-                        </capability>
-                  </webDriverCapabilities>
+        <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
+    <webDriverCapabilities>
+      <capability>
+        <name>phantomjs.binary.path</name>
+        <value>/opt/phantomjs/bin/phantomjs</value>
+      </capability>
+      <capability>
+        <name>phantomjs.cli.args</name>
+        <list>
+          <value>--disk-cache=true</value>
+          <value>--max-disk-cache-size=256</value>
+        </list>
+      </capability>
+    </webDriverCapabilities>
           </configuration>
       </plugin>
 	    <plugin>
