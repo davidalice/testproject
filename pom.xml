@@ -123,6 +123,21 @@
           </execution>
         </executions>
       </plugin>
+	    <plugin>
+        <groupId>com.github.klieber</groupId>
+        <artifactId>phantomjs-maven-plugin</artifactId>
+        <version>${phantomjs-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>install</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <version>1.9.7</version>
+        </configuration>
+      </plugin>
       <plugin>
       	<groupId>com.github.searls</groupId>
       	<artifactId>jasmine-maven-plugin</artifactId>
@@ -151,8 +166,8 @@
         <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
     <webDriverCapabilities>
       <capability>
-        <name>phantomjs.binary.path</name>
-        <value>/opt/phantomjs/bin/phantomjs</value>
+<name>phantomjs.binary.path</name>
+                  <value>${phantomjs.binary}</value>
       </capability>
       <capability>
         <name>phantomjs.cli.args</name>
