@@ -19,17 +19,9 @@ pipeline {
           steps {
             sh 'ifconfig'
             sh 'pwd'
-            sh 'sudo apt-get update -y'
-            sh '''
-sudo apt-get upgrade -y'''
-            sh 'sudo shutdown -r now'
-            sh 'sudo apt-get install build-essential chrpath libssl-dev libxft-dev libfreetype6-dev libfreetype6 libfontconfig1-dev libfontconfig1 -y'
-            sh 'sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2'
-            sh 'sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/'
-            sh '''sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
-'''
             sh 'phantomjs --version'
             sh 'whereis phantomjs'
+            sh 'mvn jasmine:test'
           }
         }
         stage('Code Quality') {
