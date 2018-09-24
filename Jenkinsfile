@@ -19,7 +19,7 @@ pipeline {
           steps {
             sh 'ifconfig'
             sh 'pwd'
-            sh 'mvn jasmine:test'
+            sh 'mvn phantomjs:install jasmine:test'
           }
         }
         stage('Code Quality') {
