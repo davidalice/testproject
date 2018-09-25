@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       args '-v /root/.m2:/root/.m2'
-      image 'goyalzz/ubuntu-java-8-maven-docker-image'
+      image 'markhobson/maven-chrome'
     }
 
   }
