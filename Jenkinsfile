@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
           steps {
             sh 'ifconfig'
-            sh '''apt-get install build-essential g++ libexpat1-dev libfontconfig1-dev libfreetype6-dev \\
+            sh '''#apt-get install build-essential g++ libexpat1-dev libfontconfig1-dev libfreetype6-dev \\
                       libicu-dev libjpeg62-turbo-dev libpng12-dev libssl-dev zlib1g-dev'''
             sh 'mvn phantomjs:install jasmine:test'
           }
