@@ -17,7 +17,6 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            sh 'ifconfig'
             sh 'ls -l'
             sh 'mvn phantomjs:install jasmine:test'
           }
