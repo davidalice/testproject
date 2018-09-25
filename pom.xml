@@ -166,13 +166,14 @@
         <phantomjs>
           <version>2.1.1</version>
         </phantomjs>
+		 <jsSrcDir>${project.basedir}/src/main/resources/templates/javascript</jsSrcDir>
         <preloadSources>
-          <source>/src/main/resources/templates/javascript/.js</source>
+          <source>${project.basedir}/src/main/resources/templates/javascript/.js</source>
         </preloadSources>
         <specIncludes>
-          <include>/src/test/javascript/*.js</include>
+          <include>${project.basedir}/src/test/javascript/*.js</include>
         </specIncludes>
-        <customRunnerTemplate>/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
+        <customRunnerTemplate>${project.basedir}/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
         <haltOnFailure>true</haltOnFailure>
         <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
     <webDriverCapabilities>
