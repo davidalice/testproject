@@ -185,6 +185,7 @@
         <list>
           <value>--disk-cache=true</value>
           <value>--max-disk-cache-size=256</value>
+	  <value>--webdriver-loglevel=NONE</value>
         </list>
       </capability>
     </webDriverCapabilities>
