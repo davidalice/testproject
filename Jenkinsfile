@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
           steps {
             sh 'ls -l'
-            sh 'mvn phantomjs:install jasmine:test'
+            sh 'mvn -X phantomjs:install jasmine:test'
           }
         }
         stage('Code Quality') {
