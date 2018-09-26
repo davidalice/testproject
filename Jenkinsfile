@@ -29,6 +29,11 @@ pipeline {
             sh 'mvn sonar:sonar -Dsonar.projectKey=davidalice_testproject -Dsonar.organization=davidalice-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=541cba0d06de055621efd0c35a78be50f5689d11'
           }
         }
+        stage('verify') {
+          steps {
+            sh 'mvn verify'
+          }
+        }
       }
     }
   }
