@@ -105,7 +105,11 @@
   <version>6.10</version>
   <scope>test</scope>
 </dependency>
-	  
+	          <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <scope>provided</scope>
+        </dependency>
   </dependencies>
 <repositories>
   <repository>
