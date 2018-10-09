@@ -109,6 +109,7 @@
             <groupId>com.ibm.icu</groupId>
             <artifactId>icu4j</artifactId>
             <scope>provided</scope>
+			  <version>3.4.4</version>
         </dependency>
   </dependencies>
 <repositories>
