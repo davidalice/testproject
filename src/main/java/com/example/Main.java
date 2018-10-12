@@ -36,7 +36,7 @@ import java.util.Map;
 
 @Controller
 @SpringBootApplication
-public class Main {
+public class Main extends SpringBootServletInitializer {
 
   @Value("${spring.datasource.url}")
   private String dbUrl;
