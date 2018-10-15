@@ -169,7 +169,6 @@
           <execution>
             <goals>
               <goal>test</goal>
-		    <goal>jasmine</goal>
             </goals>
 	    
           </execution>
