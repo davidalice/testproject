@@ -216,8 +216,8 @@
       <capability>
         <name>phantomjs.cli.args</name>
         <list>
-          <value>disk-cache=true</value> <!-- include hyphen hyphen before disk-cache, max-disk-cache-size and webdriver-loglevel-->
-          <!--<value>max-disk-cache-size=256</value>
+          <value>disk-cache=true</value>  include hyphen hyphen before disk-cache, max-disk-cache-size and webdriver-loglevel
+          <value>max-disk-cache-size=256</value>
 	  <value>webdriver-loglevel=NONE</value>
         </list>
       </capability>
