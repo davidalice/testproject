@@ -224,6 +224,7 @@
     </webDriverCapabilities>
           </configuration> -->
       </plugin>
+	    <!--
 	    <plugin>
       <groupId>com.github.timurstrekalov</groupId>
       <artifactId>saga-maven-plugin</artifactId>
@@ -239,10 +240,10 @@
         <baseDir>http://localhost:${jasmine.serverPort}</baseDir>
         <outputDir>/Volumes/sandbox/jasmine-maven-plugin/target/coverage</outputDir>
         <noInstrumentPatterns>
-          <pattern>.*/spec/.*</pattern> <!-- Don't instrument specs -->
+          <pattern>.*/spec/.*</pattern> 
         </noInstrumentPatterns>
       </configuration>
-    </plugin>
+    </plugin> -->
     </plugins>
   </build>
 </project>
