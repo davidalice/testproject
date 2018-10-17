@@ -1,4 +1,4 @@
-describe("the ElementMover object",function(){
+describe("element_mover", function() {
 	
 	var rootId = 'testContainer';
 	
