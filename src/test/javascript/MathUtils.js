@@ -22,13 +22,13 @@ describe("MathUtils", function() {
         it("should be able to calculate factorial of 9", function() {
             expect(calc.factorial(9)).toEqual(362880);
         });
-         
+         /*
         //Spec for factorial operation for negative number
         it("should be able to throw error in factorial operation when the number is negative", function() {
             expect(function() {
                 calc.factorial(-7)
             }).toThrowError(Error);
-        });
+        }); */
          
     });
 });
