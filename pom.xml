@@ -160,7 +160,7 @@
         <configuration>
           <version>1.9.7</version>
         </configuration> 
-      </plugin> -->
+      </plugin> 
 	<plugin>
            <groupId>com.github.klieber</groupId>
            <artifactId>phantomjs-maven-plugin</artifactId>
@@ -175,7 +175,7 @@
            <configuration>
                <version>1.9.7</version>
            </configuration>
-       </plugin>
+       </plugin> -->
       <plugin>
       	<groupId>com.github.searls</groupId>
       	<artifactId>jasmine-maven-plugin</artifactId>
@@ -190,17 +190,8 @@
            <configuration>
                <jsSrcDir>${project.basedir}/src/main/resources/templates/javascript</jsSrcDir>
                <jsTestSrcDir>src/test/javascript</jsTestSrcDir>
-               <preloadSources>
-               <sorurce>${project.basedir}/src/test/javascript/MathUtils.js</sorurce>
-		       <sorurce>${project.basedir}/src/test/javascript/element_mover_spec.js</sorurce>
-               </preloadSources>
-	       <specIncludes>
-           	<include>${project.basedir}/src/test/javascript/*.js</include>
-        	</specIncludes>
-		<customRunnerTemplate>${project.basedir}/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
-        	<haltOnFailure>true</haltOnFailure>
- 
-           </configuration>
+               
+           </configuration> 
 	      <!--
 	<configuration>
 		
@@ -225,8 +216,8 @@
       <capability>
         <name>phantomjs.cli.args</name>
         <list>
-          <value>disk-cache=true</value>
-          <value>max-disk-cache-size=256</value>
+          <value>disk-cache=true</value> <!-- include hyphen hyphen before disk-cache, max-disk-cache-size and webdriver-loglevel-->
+          <!--<value>max-disk-cache-size=256</value>
 	  <value>webdriver-loglevel=NONE</value>
         </list>
       </capability>
