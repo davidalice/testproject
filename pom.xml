@@ -192,6 +192,7 @@
                <jsTestSrcDir>src/test/javascript</jsTestSrcDir>
                <preloadSources>
                <sorurce>${project.basedir}/src/test/javascript/MathUtils.js</sorurce>
+		       <sorurce>${project.basedir}/src/test/javascript/element_mover_spec.js</sorurce>
                </preloadSources>
 	       <specIncludes>
            	<include>${project.basedir}/src/test/javascript/*.js</include>
@@ -211,9 +212,25 @@
           <source>${project.basedir}/src/main/resources/templates/javascript/.js</source>
         </preloadSources>
         <specIncludes>
+		<customRunnerTemplate>${project.basedir}/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
+        	<haltOnFailure>true</haltOnFailure>
           <include>${project.basedir}/src/test/javascript/*.js</include>
         </specIncludes>
-
+       <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
+    <webDriverCapabilities>
+      <capability>
+<name>phantomjs.binary.path</name>
+                  <value>${phantomjs.binary}</value>
+      </capability>
+      <capability>
+        <name>phantomjs.cli.args</name>
+        <list>
+          <value>--disk-cache=true</value>
+          <value>--max-disk-cache-size=256</value>
+	  <value>--webdriver-loglevel=NONE</value>
+        </list>
+      </capability>
+    </webDriverCapabilities>
           </configuration> -->
       </plugin>
 	    <plugin>
