@@ -219,21 +219,6 @@
           <include>${project.basedir}/src/test/javascript/*.js</include>
         </specIncludes>
 				  <customRunnerTemplate>${project.basedir}/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
-           </configuration>
-	      <!--
-	<configuration>
-		
-        <phantomjs>
-          <version>2.1.1</version>
-        </phantomjs>
-		 <jsSrcDir>${project.basedir}/src/main/resources/templates/javascript</jsSrcDir>
-        <preloadSources>
-          <source>${project.basedir}/src/main/resources/templates/javascript/.js</source>
-        </preloadSources>
-        <specIncludes>
-          <include>${project.basedir}/src/test/javascript/*.js</include>
-        </specIncludes>
-        <customRunnerTemplate>${project.basedir}/src/main/resources/templates/SpecRunner.html</customRunnerTemplate>
         <haltOnFailure>true</haltOnFailure>
         <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
     <webDriverCapabilities>
@@ -250,6 +235,21 @@
         </list>
       </capability>
     </webDriverCapabilities>
+           </configuration>
+	      <!--
+	<configuration>
+		
+        <phantomjs>
+          <version>2.1.1</version>
+        </phantomjs>
+		 <jsSrcDir>${project.basedir}/src/main/resources/templates/javascript</jsSrcDir>
+        <preloadSources>
+          <source>${project.basedir}/src/main/resources/templates/javascript/.js</source>
+        </preloadSources>
+        <specIncludes>
+          <include>${project.basedir}/src/test/javascript/*.js</include>
+        </specIncludes>
+
           </configuration> -->
       </plugin>
 	    <plugin>
